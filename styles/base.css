@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    /* font-style: italic; */
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+
+
+#course-title{
+    display: block;
+    background-color: #1D4D72;
+    text-align: center;
+    color: #fff;
+    line-height: 8vh;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ navigation ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+nav {
+    background-color: #363636;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: yellow;
+}
+
+
+
+
+/*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ larger ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 0 auto;
+    }
+}
+
+
+
+
