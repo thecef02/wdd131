@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Cristian Fernandez</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Demonstrate prerequisite 
+                                        knowledge by applying HTML and CSS in the design and development 
+                                        of a home page." />
+    <meta name="author" content="Cristian Fernandez" />
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1> Cristian Fernandez</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="https://www.linkedin.com/">LinkedIn Profile</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite
+                        Scripture</a></li>
+                <li><a href="final-project/">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>Cristian Fernandez</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-top">
+                <div class="card-text">
+                    <p>
+                        My name is Rubia and I go by Ruby. I was born in South Africa and live with my family in
+                        Madagascar.
+                        I am currently working as an administrative legal assistant at a law firm. My children are my
+                        world and
+                        I love spending time with them. I love to travel and I love to learn new things.
+                    </p>
+                </div>
+                <div class="card-photo">
+                    <img src="images/ruby.png" alt="Portrait of Ruby" width="200" height="250" loading="lazy">
+                </div>
+                <h3>Toloria, Madagascar</h3>
+            </div>
+            <div class="card-bottom">
+                <figure class="card-bottom-flag">
+                    <img src="images/madagascar-flag.png" alt="Official flag of Madagascar" width="160" height="110"
+                        loading="lazy">
+                    <figcaption>Official Flag of Madagascar</figcaption>
+                </figure>
+                <div class="card-bottom-text">
+                    <p>
+                        Madagascar is the 4th largest island in the world and is located in the Indian Ocean. It is home
+                        to 5%
+                        of the world's plant and animal species, of which more than 80% are endemic to Madagascar. The
+                        island is
+                        best known for its lemurs, baobab trees, and vanilla.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul class="resources">
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a> </li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
