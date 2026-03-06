@@ -5,14 +5,11 @@
 
 body{
     font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
-
     font-variation-settings: "wdth" 100, "YTLC" 500;
-
 }
-
-
-
+header{
+    background-color: #fff;
+}
 #course-title{
     display: block;
     background-color: #1D4D72;
@@ -24,16 +21,10 @@ body{
 
 
 
-
-
-
-
-
-
 /*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ navigation ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
 
 nav {
-    background-color: #363636;
+    background-color: #202020;
     margin: 0 auto;
 }
 
@@ -129,7 +120,6 @@ main h1{
 .card-photo img{
     display: block;
     max-width: 100%; 
-    height: auto;
     width: auto;
     height: auto;
 }
