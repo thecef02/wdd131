@@ -1,0 +1,32 @@
+@media only screen and (min-width: 40em) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav ul {
+        flex: 1;
+        /* width: auto; */
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .navigation a {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #menu {
+        display: none;
+    }
+}

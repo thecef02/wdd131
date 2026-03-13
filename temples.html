@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Cristian Fernandez</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals. Apply the concepts presented in the learning activities to a picture album page that is responsive in both small and larger views." />
+    <meta name="author" content="Cristian Fernandez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@1,6..12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+            <h1>Temple Album</h1>
+            <nav>
+                <a id="menu" href="#"></a>
+                <ul class="navigation">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1></h1>
+        <figure class="card">
+            <img src="images/argentina-flag.jpg" alt="Official flag of Argentina" width="150" height="99" loading="lazy">
+            <figcaption>Official Flag of Argentina</figcaption>
+        </figure>
+    </main>
+    <footer>
+                <p>&copy; <span id="currentyear"></span></p>
+                <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
