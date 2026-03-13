@@ -6,6 +6,11 @@
         flex: 1;
         /* width: auto; */
     }
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
     .navigation {
         display: flex;
         flex-direction: row;
@@ -28,5 +33,11 @@
 
     #menu {
         display: none;
+    }
+    figure img {
+        width: 240px;
+    }
+    footer{
+        font-size: 20px;
     }
 }

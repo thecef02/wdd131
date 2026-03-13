@@ -9,22 +9,19 @@ body {
 }
 header {
     display: flex;
-    /* grid-template-columns: 40% 60%; */
     align-items: stretch;
     justify-content: space-between;
     gap: 0;
     padding: 0;
 }
 header h1 {
-    /* min-width: 250px; */
     font-size: 1rem;
-
-    /* height: 100%; */
     margin: 0;
     padding: 1rem;
     background-color: #ace;
     color: #000;
     text-align: center;
+    align-content: center;
 }
 
 nav p {
@@ -33,6 +30,9 @@ nav p {
     padding: 0.5rem;
     background-color: #eee;
 }
+
+
+main h1{text-align: center; margin: 0.5rem;}
 
 /* Mobile View ***************/
 #menu {
@@ -118,9 +118,20 @@ nav ul {
     font-size: 1.2rem;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
 
-
-
+figure{
+    margin: 0;
+}
+figure img{width: 350px;}
+figcaption{
+    text-align: center;
+}
 
 
 
@@ -160,6 +171,6 @@ footer {
     text-align: center;
     color: #fff;
     line-height: 4vh;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 2rem;
 }
