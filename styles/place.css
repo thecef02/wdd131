@@ -1,0 +1,173 @@
+:root {
+    --primary: #1D4D72;
+    --accent: #ace;
+    --card-bg: #fff;
+    --border: #cfcfcf;
+    --body-bg: #f5f6f8;
+    --text: #111;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, system-ui, sans-serif;
+    background: var(--body-bg);
+    color: var(--text);
+}
+
+.site-header {
+    padding: 1.25rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.site-header h1 {
+    background: var(--card-bg);
+    border: 1px solid var(--body-bg);
+    padding: .75rem 1.25rem;
+    border-radius: .5rem;
+    font-size: clamp(2rem, 5vw, 2rem);
+}
+
+.layout {
+    width: min(1500px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero img {
+    height: auto;
+    border: 1px solid var(--body-bg);
+    border-radius: .5rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--body-bg);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 1.75rem;
+    font-size: 1.5rem;
+}
+
+.card dl {
+    display: grid;
+    gap: 1rem;
+    text-align: right;
+}
+
+.card dl>div {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    gap: .5rem;
+}
+
+.card dt {
+    font-weight: 700;
+}
+
+.card dd {
+    text-align: left;
+}
+
+.weather-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom:1rem;
+
+}
+
+.weather-icon {
+    display: block;
+    margin: .25rem auto 1rem;
+}
+
+
+.weather-title::after {
+    content: "";
+}
+
+
+
+
+/* Footer */
+.site-footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background: var(--card-bg);
+    border-top: 1px solid var(--body-bg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 500px) {
+    .layout {
+        position: relative;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+
+    .data {
+        position: absolute;
+        left: 2rem;
+        top: 8rem;
+        width: min(300px, 28vw);
+    }
+
+    .weather {
+        position: absolute;
+        right: 2rem;
+        bottom: 5rem;
+        width: min(300px, 30vw);
+    }
+    .weather-icon {
+    display: none;
+    } 
+
+    #weather-title {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    #weather-title::after {
+        content: " ⛅";
+        font-size: 1.4rem;
+        line-height: 1;
+    }   
+
+}
