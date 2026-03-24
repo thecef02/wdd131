@@ -33,6 +33,8 @@ function createTempleCard(filteredTemples) {
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");
+    img.setAttribute("width", "400");
+    img.setAttribute("height", "300");
 
     card.appendChild(name);
     card.appendChild(location);
@@ -103,7 +105,30 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
   },
-  // Add more temple objects here...
+  {
+    templeName: "Mendoza Argentina",
+    location: "Mendoza, Argentina",
+    dedicated: "2018, October, 7",
+    area: 21999,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/mendoza-argentina-temple/mendoza-argentina-temple-51739-main.jpg",
+  },
+  {
+    templeName: "Rome Italy",
+    location: "Rome, Italy",
+    dedicated: "2008, October, 4",
+    area: 41010,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg",
+  },
+  {
+    templeName: "Mount Timpanogos Utah",
+    location: "American Fork, Utah",
+    dedicated: "1992, October, 3",
+    area: 107240,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/mount-timpanogos-utah-temple/mount-timpanogos-utah-temple-36979-main.jpg",
+  },
 ];
 
 createTempleCard(temples);
