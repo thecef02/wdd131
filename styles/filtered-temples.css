@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+header {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 0;
+    padding: 1rem 0 3rem 0;
+}
+header h1 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+    background-color: #ace;
+    color: #000;
+    text-align: center;
+    align-content: center;
+}
+
+nav p {
+    margin: 1rem;
+    border: 1px solid #000;
+    padding: 0.5rem;
+    background-color: #eee;
+}
+
+
+main h2{text-align: center; margin: 0.5rem;}
+
+/* Mobile View ***************/
+#menu {
+    margin-left: auto;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    flex: 1;
+    /* width: auto; */
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: stretch;
+    flex-wrap: wrap; */
+
+
+    display: flex;
+    flex-direction: column;
+    /* botón arriba, UL abajo */
+    align-items: flex-end;
+    /* botón a la derecha (cámbialo a center si lo querés centrado) */
+    justify-content: flex-start;
+
+    background-color: #ace;
+    margin-left: auto;
+}
+nav ul {
+    flex: 0;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+.navigation {
+    list-style: none;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: #fff;
+    background-color: #000;
+}
+
+.show li {
+    display: block;
+    flex-basis: 100%;
+}
+
+#menu.show::before {
+    content: "❌";
+    font-size: 1.2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+
+section h3, p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: block;
+    background-color: #1D4D72;
+    text-align: center;
+    color: #fff;
+    line-height: 4vh;
+    font-size: 15px;
+    margin-top: 2rem;
+}

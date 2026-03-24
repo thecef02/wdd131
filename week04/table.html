@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Cristian Fernandez</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals. HTML tables provide a structured way to represent data presented in rows and columns." />
+    <meta name="author" content="Cristian Fernandez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@1,6..12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/table.css" />
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">ACME Wildwest Services</th>
+            </tr>
+            <tr>
+                <td class="blank"></td>
+                <th>Basic</th>
+                <th>Premium</th>
+                <th>Deluxe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Feature 1</th>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr>
+                <th>Feature 2</th>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>✔️</td>
+
+            </tr>
+            <tr>
+                <th>Feature 3</th>
+                <td>❌</td>
+                <td>❌</td>
+                <td>✔️</td>
+            </tr>
+        </tbody>
+
+        <caption>Table 1: Account Feature Comparison</caption>
+    </table>
+    <footer>
+        <p>&copy; <span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
