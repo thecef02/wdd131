@@ -3,6 +3,7 @@
     --main-bg: #ccc4cc;
     --body-bg: #f5f6f8;
     --text: #111;
+    --text-op: #000080;
     --btn-hover: #ddd;
 }
 
@@ -99,7 +100,7 @@ fieldset input[type="checkbox"] {
 }
 
 span {
-    color: navy;
+    color: var(--text-op);
     font-weight: normal;
 }
 
