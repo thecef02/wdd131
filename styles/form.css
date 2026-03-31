@@ -35,7 +35,7 @@ main {
 }
 
 .center, .review-form {
-    max-width: 900px;
+    min-width: 390px;
     margin: 0 auto;
     background-color: #ccc4cc;
     padding: 2rem;
@@ -108,7 +108,7 @@ span {
 button {
     width: 100%;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     border: 1px solid #888;
     background-color: #eee;
@@ -132,4 +132,15 @@ footer p {
 }
 footer span{
     color: var(--card-bg);
+}
+
+
+
+@media only screen and (min-width: 390px) {
+
+.review-form {
+        max-width: 900px;}
+button{
+    font-size: 2rem;
+}
 }
