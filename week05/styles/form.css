@@ -1,0 +1,135 @@
+:root {
+    --primary: #4b003b;
+    --accent: #ace;
+    --card-bg: #fff;
+    --border: #cfcfcf;
+    --body-bg: #f5f6f8;
+    --text: #111;
+    --btn-hover: #ddd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:var(--body-bg);
+    color: var(--text);
+}
+
+header{
+    text-align: center;
+    margin: 2rem;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+.center, .review-form {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ccc4cc;
+    padding: 2rem;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+.center{
+    text-align: center;
+}
+
+.form-group,fieldset {
+    margin-bottom: 2rem;
+    border: none;
+    padding: 0;
+}
+
+label,.group-title,legend {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+select,input[type="date"],input[type="text"],textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    background-color: var(--body-bg);
+}
+
+.rating-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+}
+
+.rating-group label {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.rating-group input {
+    display: block;
+    margin: 0.5rem auto 0;
+    width: 24px;
+    height: 24px;
+}
+
+fieldset label {
+    display: block;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+fieldset input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+span {
+    color: navy;
+    font-weight: normal;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid #888;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--card-bg);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+footer span{
+    color: var(--card-bg);
+}
