@@ -20,7 +20,7 @@
         <h1>Product Review</h1>
     </header>
 
-    <main>
+    <!-- <main> -->
         <form method="get" action="review.html" class="review-form">
 
             <!-- <div class="form-group"> -->
@@ -31,36 +31,36 @@
                 </select>
             <!-- </div> -->
 
-            <div class="form-group">
-                <p class="group-title">Overall Rating</p>
+            <!-- <div class="form-group"> -->
+                <!-- <p class="group-title">Overall Rating</p> -->
 
                 <div class="rating-group">
                     <label>
                         ☆
-                        <input type="radio" name="rating" value="1" required>
+                        <input type="radio" id="no-id" name="rating" value="1" required>
                     </label>
 
                     <label>
                         ☆☆
-                        <input type="radio" name="rating" value="2">
+                        <input type="radio" id="no-id" name="rating" value="2">
                     </label>
 
                     <label>
                         ☆☆☆
-                        <input type="radio" name="rating" value="3">
+                        <input type="radio" id="no-id" name="rating" value="3">
                     </label>
 
                     <label>
                         ☆☆☆☆
-                        <input type="radio" name="rating" value="4">
+                        <input type="radio" id="no-id" name="rating" value="4">
                     </label>
 
                     <label>
                         ☆☆☆☆☆
-                        <input type="radio" name="rating" value="5">
+                        <input type="radio" id="no-id" name="rating" value="5">
                     </label>
                 </div>
-            </div>
+            <!-- </div> -->
 
             <div class="form-group">
                 <label for="installDate">Date of Installation</label>
@@ -70,10 +70,10 @@
             <fieldset class="form-group">
                 <legend>Which features did you find useful in the product?<br><em>(Check all that apply)</em></legend>
 
-                <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                <label><input type="checkbox" name="features" value="easeOfUse"> Ease of Use</label>
-                <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                <label><input type="checkbox" name="features" value="design"> Design</label>
+                <label><input type="checkbox"  id="no-id" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox"  id="no-id" name="features" value="easeOfUse"> Ease of Use</label>
+                <label><input type="checkbox"  id="no-id" name="features" value="performance"> Performance</label>
+                <label><input type="checkbox"  id="no-id" name="features" value="design"> Design</label>
             </fieldset>
 
             <div class="form-group">
@@ -88,7 +88,7 @@
 
             <button type="submit">Post Review</button>
         </form>
-    </main>
+    <!-- </main> -->
 
     <footer>
         <p>&copy; <span id="currentyear"></span></p>
