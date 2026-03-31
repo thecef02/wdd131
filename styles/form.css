@@ -1,8 +1,6 @@
 :root {
     --primary: #4b003b;
-    --accent: #ace;
-    --card-bg: #fff;
-    --border: #cfcfcf;
+    --main-bg: #ccc4cc;
     --body-bg: #f5f6f8;
     --text: #111;
     --btn-hover: #ddd;
@@ -37,9 +35,9 @@ main {
 .center, .review-form {
     min-width: 390px;
     margin: 0 auto;
-    background-color: #ccc4cc;
+    background-color: var(--main-bg);
     padding: 2rem;
-    border: 1px solid #aaa;
+    border: 1px solid var(--btn-hover);
     border-radius: 8px;
 }
 .center{
@@ -63,7 +61,7 @@ select,input[type="date"],input[type="text"],textarea {
     width: 100%;
     padding: 1rem;
     font-size: 1.1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--btn-hover);
     background-color: var(--body-bg);
 }
 
@@ -111,7 +109,7 @@ button {
     font-size: 1.4rem;
     font-weight: bold;
     border: 1px solid #888;
-    background-color: #eee;
+    background-color: var(--body-bg);
     cursor: pointer;
 }
 
@@ -121,7 +119,7 @@ button:hover {
 
 footer {
     background-color: var(--primary);
-    color: var(--card-bg);
+    color: var(--body-bg);
     text-align: center;
     padding: 2rem 1rem;
 }
@@ -131,7 +129,7 @@ footer p {
     font-size: 1.2rem;
 }
 footer span{
-    color: var(--card-bg);
+    color: var(--body-bg);
 }
 
 
