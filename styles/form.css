@@ -23,7 +23,6 @@ header{
     margin: 2rem;
 }
 
-
 header h1 {
     margin: 0;
     font-size: 3rem;
@@ -31,8 +30,17 @@ header h1 {
 
 main {
     padding: 2rem 0;
+    /* text-align: center; */
 }
-
+.required-info{
+    font-size: 12px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 0.5rem;
+}
+.required-field {
+    color: #f00;
+}
 .center, .review-form {
     min-width: 390px;
     margin: 0 auto;
@@ -103,6 +111,8 @@ span {
     color: var(--text-op);
     font-weight: normal;
 }
+
+
 
 button {
     width: 100%;
